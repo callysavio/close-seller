@@ -175,11 +175,27 @@ li, a{
 .ticket{
     position: absolute;
     top: 2000px;
+    padding: 45px;
+    width: 100%;
+}
+.ticket .getTicket{
+    text-align: center;
+}
+.getTicket h1{
+    color: #fb7e00;
+    font-size: 60px;
+}
+.getTicket p{
+    font-size: 35px;
+    margin-bottom: 60px;
+    font-weight: bold;
 }
 .accessticket{
     border: 1px solid #fb7e00;
     border-radius: 5px;
     text-align: center;
+    width: 45%;
+    padding: 40px;
 }
 .accessticket button{
     border: none;
@@ -187,4 +203,10 @@ li, a{
     padding: 10px 28px;
     background-color: #6f1d9d;
     color: white;
+}
+.flexticket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
