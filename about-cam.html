@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about-cam.css">
+    <title>bout Cam</title>
+</head>
+<body>
+    <nav>
+        <img src="images/close_seller-logo.png" alt="close seller logo">
+        <div class="container-fluid">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Speakers</a>
+                </li>
+                <li>
+                    <a href="#">Tickets</a>
+                </li>
+                <li>
+                    <a href="#">Sponsorship</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fas fa-bars fa-fade" onclick="offCanvas()" style="color: #fb7e00; opacity: 1; font-size: 35px; display: none;"></i>
+        <div id="showRight">
+            <div class="head">
+                <span><i class="fas fa-solid fa-xmark fa-fade" onclick="cancel()" style="color: #6f1d9f;"></i></span>
+                <a href="#">Home</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Speakers</a>
+                </li>
+                <li>
+                    <a href="#">Tickets</a>
+                </li>
+                <li>
+                    <a href="#">Sponsorship</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button">Get Ticket</button>
+    </nav>
+
+    <div class="imageContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Aliquid enim id repudiandae blanditiis in tempora tenetur quae laudantium minus, 
+            ipsam molestias, 
+            labore excepturi nesciunt, doloribus eveniet dolorum. Beatae, facilis ut?
+        </p>
+        <h2 id="time"></h2>
+        <div class="day">
+            <div class="countdown-box" id="daysBox">
+                0<br>days
+            </div>
+            
+            <div class="countdown-box" id="hoursBox">
+                0<br>hours
+            </div>
+            
+            <div class="countdown-box" id="minutesBox">
+                0<br>minutes
+            </div>
+            
+            <div class="countdown-box" id="secondsBox">
+                0<br>seconds
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>Why you sholud attend the event.</h3>
+        <ul>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Illo commodi totam, dolor distinctio vitae harum ab alias, 
+                adipisci, quas porro ratione enim accusantium praesentium 
+                nulla deleniti doloribus cumque excepturi fugit.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Illo commodi totam, dolor distinctio vitae harum ab alias, 
+                adipisci, quas porro ratione enim accusantium praesentium 
+                nulla deleniti doloribus cumque excepturi fugit.</li>
+        </ul>
+    </div>
+
+    <div class="speakers" id="speakers">
+        <h1>Meet Our <span>Speaker</span></h1>
+        <div class="speakersImage">
+            <img src="images/cam.jpg" alt="cam">
+            <img src="images/cam.jpg" alt="event">
+            <img src="images/cam.jpg" alt="cam">
+            <img src="images/cam.jpg" alt="event">
+        </div>
+        <div class="speakersImage">
+            <img src="images/cam.jpg" alt="cam">
+            <img src="images/cam.jpg" alt="event">
+            <img src="images/cam.jpg" alt="cam">
+            <img src="images/cam.jpg" alt="event">
+        </div>
+    </div>
+
+    <div class="ticket" id="ticket">
+        <h1>Get Ticket Now!</h1>
+        <p>There's no time to waste seize this opportunity</p>
+        <div class="accessticket">
+            <h2><b>Silver Access</b></h2>
+            <hr>
+            <p>Regular seat at the event</p>
+            <hr>
+            <p>Access to light refreshment</p>
+            <hr>
+            <p>Event recording</p>
+            <h3>#10000</h3>
+            <button type="button">Buy Ticket</button>
+        </div>
+    </div>
+
+    <script src="about-cam.js">
+
+    </script>
+</body>
+</html>
