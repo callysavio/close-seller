@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buy-ticket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Buy Ticket</title>
+</head>
+<body>
+    <nav>
+        <img src="images/close_seller-logo.png" alt="close seller logo">
+        <div class="container-fluid">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#speakers">Speakers</a>
+                </li>
+                <li>
+                    <a href="#ticket">Tickets</a>
+                </li>
+                <li>
+                    <a href="#sponsor">Sponsorship</a>
+                </li>
+                <li>
+                    <a href="events.html">Event</a>
+                </li>    
+                <li>
+                    <a href="#faqs">FAQs</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fas fa-bars fa-fade" onclick="offCanvas()" style="color: #fb7e00; opacity: 1; font-size: 35px; display: none;"></i>
+        <div id="showRight">
+            <div class="head">
+                <span><i class="fas fa-solid fa-xmark fa-fade" onclick="cancel()" style="color: #6f1d9f;"></i></span>
+                <a href="#">Home</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Speakers</a>
+                </li>
+                <li>
+                    <a href="#">Tickets</a>
+                </li>
+                <li>
+                    <a href="#">Sponsorship</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#ticket"><button type="button">Get Ticket</button></a>
+    </nav>
+
+    <h1>Cart</h1>
+
+    <div class="cart">
+        <table>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td><i class="fas fa-solid fa-xmark fa-fade" onclick="cancel()" style="color: #fb7e00;"></i></td>
+                <td>Silver Access</td>
+                <td>#10000</td>
+                <td><input type="number" name="quntity" id=""></td>
+                <td>#10000</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <div class="updatecart">
+                        <div class="coupon">
+                            <input type="text" placeholder="Coupon code">
+                            <button type="button">Apply coupon</button>
+                        </div>
+                        <button type="button">Update cart</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="cart-total">
+            <h2>Cart totals</h2>
+            <div class="total">
+                <p>Subtotal: <span>#10000</span></p>
+                <p>Total: <span>#10000</span></p>
+            </div>
+            <button type="button">Proceed to checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#" class="floatRight">Host your events</a></li>
+        </ul>
+        <hr>
+        <div class="social">
+            <p>&copy 2023 close seller is a registered trademark of PLD Ltd.</p>
+            <span>
+                <i class="fa-brands fa-instagram" style="color: #fb7e00;"></i>
+                <i class="fa-brands fa-twitter" style="color: #fb7e00;"></i>
+                <i class="fa-brands fa-facebook" style="color: #fb7d00;"></i>
+            </span>
+        </div>
+</footer>
+</body>
+</html>
