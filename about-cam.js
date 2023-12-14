@@ -208,6 +208,7 @@ if (minusElements.length > 3) {
 function ques4() {
     if (text4.style.display === "none") {
         text4.style.display = "block";
+        text4.style.display = "margin-bottom: 560px;"
         angleRight4.style.display = "none";
         add4.style.display = "none";
 // Option 2: Access a specific element by index
