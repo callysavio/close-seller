@@ -50,7 +50,7 @@ function writeAndClearEvent() {
             }
             // Repeat the process
             setTimeout(writeAndClearEvent, 0); // Adjust the delay before the next name
-        }, 100); // Adjust the delay before clearing the name
+        }, 300); // Adjust the delay before clearing the name
     }
 };
 
