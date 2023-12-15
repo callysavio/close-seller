@@ -50,13 +50,45 @@ li, a{
     box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.2);
     z-index: 1;
 }
+.dropdown-mobile-content{
+    display: none;
+}
 .dropdown-content li{
     margin: 22px 8px;
     width: 40;
 }
+.mobile{
+    display: none;
+    text-align: center;
+}
+.mobile ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -50px;
+}
+.mobile li, .mobile a{
+    color: #fb7e00;
+    font-size: 17px;
+    margin-right: 20px;
+}
+.dropbtn{
+    width: 100%;
+    border: 1px solid #6f1d9d;
+}
 .dropdown-content a{
     color: white;
     font-size: 18px;
+}
+.dropdown-mobile-content .event-type select{
+    width: 100%;
+}
+.mobile .btn{
+    border: none;
+    width: 80%;
+    margin: 40px auto;
+    color: white;
+    background-color: #fb7e00;
 }
 .dropdown-content li:hover{
     background-color: #6f1d9d;
@@ -67,10 +99,16 @@ li, a{
 .dropdown:hover .dropdown-content{
     display: block;
 }
+.dropdown-mobile:hover .dropdown-mobile-content{
+    display: block;
+}
 /* The icon for showing the content */
-.fas{
+#menu{
     display: none;
     cursor: pointer;
+    color: #fb7e00;
+    opacity: 1; 
+    font-size: 35px;
 }
 #showRight{
     position: absolute;
@@ -108,14 +146,15 @@ li, a{
 }
 .search{
     background-color: black;
-    position: absolute;
-    top: 80px;
+    position: relative;
+    top: 90px;
     width: 100%;
     height: 100px;
     padding: 10px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .search p{
     color: #fb7e00;
@@ -196,9 +235,12 @@ li, a{
     border-radius: 10px;
     cursor: pointer;
 }
+.filter-content hr{
+    margin-top: 70px;
+}
 #allEvent{
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: 150px;
     margin: 0 45px;
 }
 .card {
@@ -241,6 +283,7 @@ li, a{
     justify-content: space-between;
     align-items: center;
     gap: 47px;
+    flex-wrap: wrap;
 }
 #upcoming{
     margin-top: 50px;
@@ -252,20 +295,22 @@ footer{
     background: #6f1d9d url('images/event.jpg') center/cover no-repeat;
     opacity: 0.8;
     padding: 10px 45px;
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: -240vh;
-    height: 200px;
+    height: 20%;
     color: white;
+    top: 200px;
 }
 footer ul{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 15px;
-    gap: 20px;
     margin-left: -35px;
+    flex-wrap: wrap;
 }
+
 footer .floatRight{
-    margin-left: 480px;
     color: #fb7e00;
 }
 footer .social{
@@ -280,4 +325,258 @@ footer i{
 }
 footer i:hover{
     opacity: 0.5;
+}
+@media screen and (max-width: 1355px) {
+    .search input{
+        width: 350px;
+        margin-left: 120px;
+    }
+    .search .icon-search{
+        left: 550px;
+    }
+    .search select{
+        width: 15%;
+    }
+    .search .btn{
+        margin-left: -55px;
+    }
+    .card {
+        max-width: 200px;
+    }
+    .card img{
+        width: 200px;
+        height: 180px;
+    }
+    .card li{
+        gap: 20px;
+        margin-bottom: -15px;
+        margin-left: -13px;
+    }
+}
+@media screen and (max-width: 1047px) {
+    nav{
+        padding: 0 25px;
+    }
+    nav ul{
+        margin-right: 25px;
+    }
+    .search{
+        padding: 0 25px;
+    }
+    .filter button{
+        margin-left: 30px;
+    }
+    .search input{
+        width: 350px;
+        margin-left: 200px;
+    }
+    .search p{
+        display: none;
+    }
+    .search .icon-search{
+        left: 670px;
+    }
+    .search .btn{
+        margin-right: 10px;
+    }
+    .card {
+        max-width: 180px;
+    }
+    .card img{
+        width: 180px;
+        height: 180px;
+    }
+    .card li{
+        margin-left: -17px;
+    }
+    #allEvent{
+        margin-right: 35px;
+        margin-left: 26px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .search select{
+        display: none;
+    }
+    .card {
+        max-width: 380px;
+    }
+    .card img{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .card {
+        max-width: 300px;
+    }
+    .card img{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .flex .price{
+        margin-left: 100px;
+    }
+    .event-type select{
+        width: 250px;
+    }
+    .filter-content hr{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .card {
+        max-width: 300px;
+    }
+    .card img{
+        width: 220px;
+    }
+    .search .btn{
+        display: none;
+    }
+    .search .input{
+        margin-left: 100px;
+    }
+    .input .icon-search{
+        margin-left: 90px;
+    }
+    .container-fluid{
+        display: none;
+    }
+    #menu{
+        display: block;
+        margin-right: 20px;
+    }
+    ul li{
+        margin: 1%;
+        box-sizing: border-box;
+        flex-basis: 48%;
+    }
+    .social span{
+        margin-top: -230px ;
+        flex-basis: 0%;
+    }
+    footer i{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 836px) {
+    .search .input{
+        display: none;
+    }
+    .card {
+        max-width: 200px;
+    }
+    .card img{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .card {
+        max-width: 380px;
+    }
+    .card img{
+        width: 280px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .card {
+        max-width: 400px;
+    }
+    .card img{
+        width: 260px;
+    }
+}
+@media screen and (max-width: 645px) {
+    .card {
+        max-width: 300px;
+    }
+    .card img{
+        width: 220px;
+    }
+    .card ul{
+        margin-left: -10px;
+    }
+    #showRight{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .event-type select{
+        width: 150px;
+    }
+    .flex .price{
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .card {
+        max-width: 180px;
+    }
+    .card img{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 488px) {
+    .card {
+        max-width: 400px;
+    }
+    .card img{
+        width: 400px;
+    }
+    .social span{
+        margin-top: -120px ;
+        margin-left: 30%;
+        display: flex;
+    }
+    footer{
+        height: 35vh;
+    }
+    footer .social{
+        display: inline;
+    }
+    footer hr{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .card img{
+        width: 350px;
+    }
+    .social span{
+        margin-right: -30px;
+    }
+}
+@media screen and (max-width: 410px) {
+    #showRight{
+        width: 70%;
+    }
+    .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .card img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:400px) {
+    .desktopScreen{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .filter-content{
+        height: 450px;
+    }
+    #showRight{
+        width: 80%;
+    }
+    footer{
+        height: 42vh;
+    }
 }

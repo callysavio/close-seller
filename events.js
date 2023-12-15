@@ -1,3 +1,6 @@
+var menu = document.getElementById('menu');
+    // menu.style.display = "none";
+
 function offCanvas() {
     let x = document.getElementById("showRight");
     x.style.display = "block";
@@ -20,6 +23,5 @@ function dropdown() {
     };
     
 function closeContent() {
-    console.log("Close function called");
     x.style.display = "none";
 };
