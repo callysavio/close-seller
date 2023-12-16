@@ -328,6 +328,9 @@ footer i{
 footer i:hover{
     opacity: 0.5;
 }
+.mobile-footer{
+    display: none;
+}
 @media screen and (max-width: 1355px) {
     .search input{
         width: 350px;
@@ -510,6 +513,25 @@ footer i:hover{
     #showRight{
         width: 60%;
     }
+    footer{
+        height: 10vh;
+        text-align: center;
+        padding: 18px 0 10px 20px;
+    }
+    .mobile-footer{
+        display: block;
+    }
+    .desk-footer{
+        display: none;
+    }
+    .mobile-footer i{
+        color: white;
+        font-size: 30px;
+        margin-right: 40px;
+    }
+    .mobile-footer i:hover{
+        opacity: 0.2;
+    }
 }
 @media screen and (max-width: 570px) {
     .event-type select{
@@ -538,12 +560,6 @@ footer i:hover{
         top: 10px;
         left: 35%;
     }
-    footer hr{
-        margin-top: 27px;
-    }
-    footer p{
-        margin-top: -5px;
-    }
 }
 @media screen and (max-width: 460px) {
     #allEvent{
@@ -555,9 +571,6 @@ footer i:hover{
     }
     .card img{
         width: 350px;
-    }
-    .social span{
-        margin-right: -30px;
     }
 }
 @media screen and (max-width: 410px) {

@@ -511,6 +511,25 @@ footer i:hover{
     #showRight{
         width: 60%;
     }
+    footer{
+        height: 10vh;
+        text-align: center;
+        padding: 18px 0 10px 20px;
+    }
+    .mobile-footer{
+        display: block;
+    }
+    .desk-footer{
+        display: none;
+    }
+    .mobile-footer i{
+        color: white;
+        font-size: 30px;
+        margin-right: 40px;
+    }
+    .mobile-footer i:hover{
+        opacity: 0.2;
+    }
 }
 @media screen and (max-width: 570px) {
     .program-type select{
@@ -535,16 +554,6 @@ footer i:hover{
     .card img{
         width: 400px;
     }
-    .social span{
-        top: 10px;
-        left: 35%;
-    }
-    footer hr{
-        margin-top: 27px;
-    }
-    footer p{
-        margin-top: -5px;
-    }
 }
 @media screen and (max-width: 460px) {
     #allProgram{
@@ -556,9 +565,6 @@ footer i:hover{
     }
     .card img{
         width: 350px;
-    }
-    .social span{
-        margin-right: -30px;
     }
 }
 @media screen and (max-width: 410px) {
