@@ -20,8 +20,17 @@ nav{
     z-index: 2;
 }
 nav img{
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+}
+nav .welcome{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.welcome h3{
+    color: white;
 }
 .container-fluid ul{
     display: flex;
