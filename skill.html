@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="skill.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Close Seller</title>
 </head>
@@ -19,24 +19,24 @@
                     <a href="home.html">Home</a>
                 </li>
                 <li class="dropdown">
-                        <p>Event</p>
+                        <p>Categories</p>
                         <ul class="dropdown-content">
-                            <li><a href="#">Wedding</a></li>
-                            <li><a href="#">Comedy</a></li>
-                            <li><a href="#">Birthday</a></li>
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#">Data structure</a></li>
+                            <li><a href="#">Graphic design</a></li>
                         </ul>
                 </li>
                 <li>
-                    <a href="#">All Event</a>
+                    <a href="#">All Program</a>
                 </li>
                 <li>
-                    <a href="#">Upcoming Event</a>
+                    <a href="#">Upcoming Program</a>
                 </li>
                 <li>
-                    <a href="#">Past Event</a>
+                    <a href="#">Past Program</a>
                 </li>
                 <li>
-                    <a href="form.html">Sign Out</a>
+                    <a href="#">Sign Out</a>
                 </li>
             </ul>
         </div>
@@ -48,20 +48,20 @@
             </div>
             <ul>
                 <li>
-                    <a href="#">All Event</a>
+                    <a href="#">All Program</a>
                 </li>
                 <li>
-                    <a href="#">Upcoming Event</a>
+                    <a href="#">Upcoming Program</a>
                 </li>
                 <li>
-                    <a href="#">Past Event</a>
+                    <a href="#">Past Program</a>
                 </li>
                 <li class="dropdown">
-                    <p>Events</p>
+                    <p>Categories</p>
                     <ul class="dropdown-content">
-                        <li><a href="#">Wedding</a></li>
-                        <li><a href="#">Comedy</a></li>
-                        <li><a href="#">Birthday</a></li>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Data structure</a></li>
+                        <li><a href="#">Graphic design</a></li>
                     </ul>
                 </li>
                 <hr style="margin-left: -40px; margin-top: 100px;">
@@ -83,7 +83,7 @@
         <div class="filter">
             <button type="button" onclick="dropdown()">Filter</button>
             <div class="input">
-                <input type="search" placeholder="Search event...">
+                <input type="search" placeholder="Search program...">
                 <i class="icon-search fa-solid fa-magnifying-glass" style="color: #000000;"></i>
             </div>
         </div>
@@ -100,9 +100,9 @@
     <div class="filter-content" id="filter-content">
         <div class="desktopScreen">
             <div class="flex">
-                <div class="event-type">
-                    <h3>Event Types</h3>
-                    <select name="event-type" id="events">
+                <div class="program-type">
+                    <h3>Program Types</h3>
+                    <select name="program-type" id="programs">
                         <option value="marriage">Marriage</option>
                         <option value="comedy">Comedy</option>
                         <option value="birthday">Birthday</option>
@@ -133,10 +133,10 @@
                 </ul>
                 <hr>
                 <div class="dropdown-mobile">
-                    <button class="dropbtn">Event Type</button>
+                    <button class="dropbtn">Program Type</button>
                     <div class="dropdown-mobile-content">
-                        <div class="event-type">
-                            <select name="event-type" id="events">
+                        <div class="program-type">
+                            <select name="program-type" id="programs">
                                 <option value="marriage">Marriage</option>
                                 <option value="comedy">Comedy</option>
                                 <option value="birthday">Birthday</option>
@@ -165,9 +165,9 @@
         </div>
     </div>
 
-    <div id="allEvent">
+    <div id="allProgram">
         <div id="all">
-            <h1>All Event</h1>
+            <h1>All Program</h1>
             <div class="all-card">
                 <div class="card">
                     <img src="images/cam.jpg" alt="camera">
@@ -249,7 +249,7 @@
         </div>
 
         <div id="upcoming">
-            <h1>Upcoming Event</h1>
+            <h1>Upcoming Program</h1>
             <div class="all-card">
                 <div class="card">
                     <img src="images/cam.jpg" alt="camera">
@@ -331,7 +331,7 @@
         </div>
     
         <div id="past">
-            <h1>Past Event</h1>
+            <h1>Past Program</h1>
             <div class="all-card">
                 <div class="card">
                     <img src="images/cam.jpg" alt="camera">
@@ -435,6 +435,7 @@
                 </span>
             </div>
         </div>
+
             <div class="mobile-footer">
                 <a href="home.html"><i class="fa-solid fa-house"></i></a>
                 <a href="events.html"><i class="fa fa-calendar" aria-hidden="true"></i></a>
@@ -443,7 +444,7 @@
             </div>
     </footer>
 
-    <script src="events.js">
+    <script src="skill.js">
 
     </script>
 </body>

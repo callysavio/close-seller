@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/FiRn.gif') center/cover no-repeat;
+    height: 130vh;
+}
+nav{
+    background-color: #6f1d9d;
+    height: 90px;
+    width: 100%;
+    padding: 10px 50px 10px 45px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+}
+nav img{
+    width: 70px;
+    height: 70px;
+}
+.welcome{
+    display: none;
+}
+.container-fluid ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.dropdown{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.dropdown .dropdown-content{
+    position: absolute;
+    background-color: #fb7e00;
+    display: none;
+    min-width: 160px;
+    height: 150px;
+    box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content li{
+    margin: 22px 8px;
+    width: 40;
+}
+.dropdown-content a{
+    color: white;
+    font-size: 18px;
+}
+.dropdown-content li:hover{
+    background-color: #6f1d9d;
+    margin-left: -33px;
+    height: 25px;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.form{
+    position: relative;
+    top: 130px;
+}
+form{
+    width: 100%;
+    margin: 10px auto;
+    background-color: rgba(250, 125, 0, 0.8);
+}
+input{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.input-box{
+    position: relative;
+}
+.input-box input{
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 15px;
+    width: 100%;
+}
+.input-box label{
+    left: 0;
+    position: absolute;
+    padding: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    top: 0;
+    transition: all 0.5s ease-out;
+
+}
+.input-box .fa{
+    margin-top: -60px;
+    float: right;
+    margin-right: 20px;
+} 
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label
+{
+    top: -20px;
+    font-size: 18px;
+}
+#sign-in{
+    text-align: center;
+    width: 40%;
+    padding: 40px;
+}
+#sign-up{
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 180px;
+}
+.forget-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.check{
+    display: flex;
+}
+button{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+.container-fluid{
+    display: none;
+}
+#sign-in, #sign-up{
+    width: 90%;
+}
+nav img{
+    margin: 0 auto;
+}
+nav{
+    background-color: inherit;
+}
+.welcome{
+    display: block;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 670px) {
+    .form{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        padding: 20px;
+        margin: 0 30px;
+        padding: 60px;
+    }
+}
+@media screen and (max-width: 500px) {
+    form{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .forget-box{
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 30px;
+    }
+}

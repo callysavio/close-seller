@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>FORM</title>
+</head>
+<body>
+    <nav>
+        <img src="images/close_seller-logo.png" alt="close seller logo">
+        <div class="container-fluid">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="dropdown">
+                        <p>Event</p>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Wedding</a></li>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">Birthday</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="#">All</a>
+                </li>
+                <li>
+                    <a href="#">Upcoming Event</a>
+                </li>
+                <li>
+                    <a href="#">Past Event</a>
+                </li>
+                <li>
+                    <a href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="form">
+        <h1 class="welcome">Welcome back!</h1>
+        <form action="" id="sign-up">
+            <h1>Sign up</h1>
+                <div class="input-box">
+                    <input type="text" placeholder=" " />
+                    <label for="username">Username</label>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder=" " />
+                    <label for="email">Email</label>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder=" " />
+                    <label for="telephone">Phone Number</label>
+                    <i class="fa fa-solid fa-phone-flip" style="color: #000000;"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder=" " />
+                    <label for="password">Password</label>
+                    <i class="fa fa-lock"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder=" " />
+                    <label for="password">Repeat Password</label>
+                    <i class="fa fa-lock"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder=" " />
+                    <label for="addres">Address</label>
+                    <i class="fa fa-solid fa-address-card" style="color: #000000;"></i>
+                </div>
+                    <div class="check">
+                        <input type="checkbox" class="checkbox" />
+                        <p>I agree to the terms & conditions</p>
+                    </div>
+                <button type="button">Sign up</button>
+                <p>Already have an account? <span><a href="#" onclick="signIn()">Sign in</a></span></p>
+        </form>
+
+        <form action="" id="sign-in">
+            <h1>Sign in</h1>
+            <div class="input-box">
+                <input type="email" placeholder=" " />
+                <label for="email">Email</label>
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder=" " />
+                <label for="password">Password</label>
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="forget-box">
+                <div class="check">
+                    <input type="checkbox" class="checkbox" />
+                    <p>Remember me</p>
+                </div>
+                <a href="#">Forget password?</a>
+            </div>
+            <a href="home.html"><button type="button">Sign in</button></a>
+            <p>Don't have an account? <span><a href="#" onclick="signUp()">Sign up</span></p>
+    </form>
+    </div>
+
+    <script src="form.js">
+
+    </script>
+</body>
+</html>

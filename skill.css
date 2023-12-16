@@ -20,7 +20,7 @@ nav{
     z-index: 2;
 }
 nav img{
-    width: 30px;
+    width: 30%;
     height: 30px;
     border-radius: 40px;
 }
@@ -89,7 +89,7 @@ li, a{
     color: white;
     font-size: 18px;
 }
-.dropdown-mobile-content .event-type select{
+.dropdown-mobile-content .program-type select{
     width: 100%;
 }
 .mobile .btn{
@@ -136,6 +136,7 @@ li, a{
 #showRight .dropdown .dropdown-content{
     background-color: #6f1d9d;
     height: 180px;
+    width: 250px;
 }
 #showRight .dropdown-content li:hover{
     background-color: #fb7e00;
@@ -224,7 +225,7 @@ li, a{
 .flex{
     display: flex;
 }
-.event-type select{
+.program-type select{
     width: 400px;
     border: none;
     outline: none;
@@ -250,7 +251,7 @@ li, a{
 .filter-content hr{
     margin-top: 70px;
 }
-#allEvent{
+#allProgram{
     position: relative;
     top: 150px;
     margin: 0 45px;
@@ -337,9 +338,6 @@ footer i{
 footer i:hover{
     opacity: 0.5;
 }
-.mobile-footer{
-    display: none;
-}
 @media screen and (max-width: 1355px) {
     .search input{
         width: 350px;
@@ -403,7 +401,7 @@ footer i:hover{
     .card li{
         margin-left: -17px;
     }
-    #allEvent{
+    #allProgram{
         margin-right: 35px;
         margin-left: 26px;
     }
@@ -431,7 +429,7 @@ footer i:hover{
     .flex .price{
         margin-left: 100px;
     }
-    .event-type select{
+    .program-type select{
         width: 250px;
     }
     .filter-content hr{
@@ -439,7 +437,7 @@ footer i:hover{
     }
 }
 @media screen and (max-width: 860px) {
-    #allEvent{
+    #allProgram{
         padding-bottom: 190px;
     }
     .card {
@@ -543,7 +541,7 @@ footer i:hover{
     }
 }
 @media screen and (max-width: 570px) {
-    .event-type select{
+    .program-type select{
         width: 150px;
     }
     .flex .price{
@@ -565,13 +563,9 @@ footer i:hover{
     .card img{
         width: 400px;
     }
-    .social span{
-        top: 10px;
-        left: 35%;
-    }
 }
 @media screen and (max-width: 460px) {
-    #allEvent{
+    #allProgram{
         padding-bottom: 190px;
     }
     .card {
@@ -595,7 +589,7 @@ footer i:hover{
     }
 }
 @media screen and (max-width:400px) {
-    #allEvent{
+    #allProgram{
         padding-bottom: 190px;
     }
     .desktopScreen{
