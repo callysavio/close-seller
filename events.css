@@ -17,7 +17,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 nav img{
     width: 70px;
@@ -66,11 +66,11 @@ li, a{
     justify-content: space-between;
     align-items: center;
     margin-bottom: -50px;
+    margin-right: 40px;
 }
 .mobile li, .mobile a{
     color: #fb7e00;
     font-size: 17px;
-    margin-right: 20px;
 }
 .dropbtn{
     width: 100%;
@@ -89,6 +89,9 @@ li, a{
     margin: 40px auto;
     color: white;
     background-color: #fb7e00;
+}
+.dropdown-mobile-content .price{
+    margin-top: 20px;
 }
 .dropdown-content li:hover{
     background-color: #6f1d9d;
@@ -292,14 +295,13 @@ li, a{
     margin-top: 50px;
 }
 footer{
-    background: #6f1d9d url('images/event.jpg') center/cover no-repeat;
-    opacity: 0.8;
+    background: url('images/event.jpg') center/cover no-repeat;
     padding: 10px 45px;
     position: relative;
     width: 100%;
     height: 20%;
     color: white;
-    top: 200px;
+    bottom: -30vh;
 }
 footer ul{
     display: flex;
@@ -425,6 +427,9 @@ footer i:hover{
     }
 }
 @media screen and (max-width: 860px) {
+    #allEvent{
+        padding-bottom: 190px;
+    }
     .card {
         max-width: 300px;
     }
@@ -447,20 +452,17 @@ footer i:hover{
         display: block;
         margin-right: 20px;
     }
-    ul li{
-        margin: 1%;
-        box-sizing: border-box;
-        flex-basis: 48%;
+    footer ul li{
+        display: none;
     }
-    .social span{
-        margin-top: -230px ;
-        flex-basis: 0%;
-    }
-    footer i{
-        margin-bottom: 10px;
+    footer{
+        height: 15vh;
+        position: fixed;
+        bottom: 0;
     }
 }
 @media screen and (max-width: 836px) {
+    
     .search .input{
         display: none;
     }
@@ -485,6 +487,14 @@ footer i:hover{
     }
     .card img{
         width: 260px;
+    }
+    .social span{
+        position: absolute;
+        top: 12px;
+        left: 40%;
+    }
+    footer hr{
+        margin-top: 30px;
     }
 }
 @media screen and (max-width: 645px) {
@@ -525,21 +535,20 @@ footer i:hover{
         width: 400px;
     }
     .social span{
-        margin-top: -120px ;
-        margin-left: 30%;
-        display: flex;
-    }
-    footer{
-        height: 35vh;
-    }
-    footer .social{
-        display: inline;
+        top: 10px;
+        left: 35%;
     }
     footer hr{
-        margin-top: 70px;
+        margin-top: 27px;
+    }
+    footer p{
+        margin-top: -5px;
     }
 }
 @media screen and (max-width: 460px) {
+    #allEvent{
+        padding-bottom: 190px;
+    }
     .card {
         max-width: 350px;
         margin: 0 auto;
@@ -564,6 +573,9 @@ footer i:hover{
     }
 }
 @media screen and (max-width:400px) {
+    #allEvent{
+        padding-bottom: 190px;
+    }
     .desktopScreen{
         display: none;
     }
@@ -575,8 +587,5 @@ footer i:hover{
     }
     #showRight{
         width: 80%;
-    }
-    footer{
-        height: 42vh;
     }
 }

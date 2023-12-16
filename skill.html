@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Close Seller</title>
+</head>
+<body>
+    <nav>
+        <img src="images/close_seller-logo.png" alt="close seller logo">
+        <div class="container-fluid">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="dropdown">
+                        <p>Categories</p>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#">Data structure</a></li>
+                            <li><a href="#">Graphic design</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="#">All Program</a>
+                </li>
+                <li>
+                    <a href="#">Upcoming Program</a>
+                </li>
+                <li>
+                    <a href="#">Past Program</a>
+                </li>
+                <li>
+                    <a href="#">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fas fa-bars fa-fade" id="menu" onclick="offCanvas()"></i>
+        <div id="showRight">
+            <div class="head">
+                <span><i class="fas fa-solid fa-xmark fa-fade" onclick="cancel()" style="color: #6f1d9f;"></i></span>
+                <a href="home.html"><i class="fa-solid fa-house" style="color: white;"></i></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">All Program</a>
+                </li>
+                <li>
+                    <a href="#">Upcoming Program</a>
+                </li>
+                <li>
+                    <a href="#">Past Program</a>
+                </li>
+                <li class="dropdown">
+                    <p>Categories</p>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Data structure</a></li>
+                        <li><a href="#">Graphic design</a></li>
+                    </ul>
+                </li>
+                <hr style="margin-left: -40px; margin-top: 100px;">
+                <li>
+                    <a href="#"><i class="fa-regular fa-address-book" style="color: #791daa; margin-right: 10px;"></i>Contact Us</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user" style="color: #791daa; margin-right: 10px;"></i>Profile</a>
+                </li>
+                <li>
+                    <a href="form.html"><i class="fa-solid fa-right-from-bracket" style="color: #701d9d; margin-right: 10px;"></i>Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="search">
+        <p>Reset Filter</p>
+        <div class="filter">
+            <button type="button" onclick="dropdown()">Filter</button>
+            <div class="input">
+                <input type="search" placeholder="Search program...">
+                <i class="icon-search fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            </div>
+        </div>
+        <select name="country" id="country">
+            <option value="Nigeria">Nigeria</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Nigeria">Nigeria</option>
+        </select>
+        <button type="button" class="btn">Search</button>
+    </div>
+
+    <div class="filter-content" id="filter-content">
+        <div class="desktopScreen">
+            <div class="flex">
+                <div class="program-type">
+                    <h3>Program Types</h3>
+                    <select name="program-type" id="programs">
+                        <option value="marriage">Marriage</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="sport">Sport</option>
+                        <option value="club">Club</option>
+                    </select>
+                </div>
+                <div class="price">
+                    <h3>Price</h3>
+                    <input type="radio" name="payment" id="any-price">
+                    <label for="text">Any Price</label><br>
+                    <input type="radio" name="payment" id="paid">
+                    <label for="text">Paid Events</label><br>
+                    <input type="radio" name="payment" id="free">
+                    <label for="text">free Events</label><br>
+                </div>
+            </div>
+            <hr>
+            <button type="button" class="apply">Apply Filters</button>
+            <button type="button" onclick="closeContent()">Close</button>
+        </div>
+
+        <div class="mobile">
+                <ul>
+                    <li><a href="#">Reset</a></li>
+                    <li><p><b>Search</b></p></li>
+                    <li><a href="#" onclick="closeContent()">Close</a></li>
+                </ul>
+                <hr>
+                <div class="dropdown-mobile">
+                    <button class="dropbtn">Program Type</button>
+                    <div class="dropdown-mobile-content">
+                        <div class="program-type">
+                            <select name="program-type" id="programs">
+                                <option value="marriage">Marriage</option>
+                                <option value="comedy">Comedy</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="sport">Sport</option>
+                                <option value="club">Club</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown-mobile">
+                    <button class="dropbtn">Price</button>
+                    <div class="dropdown-mobile-content">
+                        <div class="price">
+                            <input type="radio" name="payment" id="any-price">
+                            <label for="text">Any Price &nbsp &nbsp</label><br>
+                            <input type="radio" name="payment" id="paid">
+                            <label for="text">Paid Events</label><br>
+                            <input type="radio" name="payment" id="free">
+                            <label for="text">free Events</label><br>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="allProgram">
+        <div id="all">
+            <h1>All Program</h1>
+            <div class="all-card">
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <a href="about-cam.html"><button type="button">Read more...</button></a>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="upcoming">
+            <h1>Upcoming Program</h1>
+            <div class="all-card">
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="past">
+            <h1>Past Program</h1>
+            <div class="all-card">
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+                <div class="card">
+                    <img src="images/cam.jpg" alt="camera">
+                    <h2>About camera</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-calendar" style="color: #fb7e00;"></i>
+                            <p>13th Jan 2024, 18:00</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-crosshairs" style="color: #fb7e00;"></i>
+                            <p>Camera</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" style="color: #fb7e00;"></i>
+                            <p>Ikeja</p>
+                        </li>
+                    </ul>
+                    <button type="button">Read more...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#" class="floatRight">Host your events</a></li>
+            </ul>
+            <hr>
+            <div class="social">
+                <p>&copy 2023 close seller is a registered trademark of PLD Ltd.</p>
+                <span>
+                    <i class="fa-brands fa-instagram" style="color: #fb7e00;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #fb7e00;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #fb7d00;"></i>
+                </span>
+            </div>
+    </footer>
+
+    <script src="skill.js">
+
+    </script>
+</body>
+</html>

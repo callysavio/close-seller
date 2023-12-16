@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #6f1d9d;
+    height: 90px;
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+}
+nav .welcome{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.welcome h3{
+    color: white;
+}
+nav img{
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+}
+.container-fluid ul{
+    font-size: 17px;
+    font-weight: bold;
+}
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+/* The icon for showing the content */
+#menu{
+    cursor: pointer;
+    color: #fb7e00;
+    font-size: 35px;
+}
+#showRight{
+    position: absolute;
+    background-color: #fb7e00;
+    color: white;
+    height: 100vh;
+    width: 70%;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    display: none;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    font-weight: bold;
+    font-size: 22px;
+    border-bottom: 2px solid #6f1d9d;
+}
+#showRight ul{
+    font-size: 21px;
+    font-weight: bold;
+}
+#showRight li{
+    margin-top: 30px;
+}
+.explores{
+    position: relative;
+    top: 100px;
+    margin: 30px;
+    padding-bottom: 120px;
+}
+.event{
+    background: url('images/event3.jpg') center/cover no-repeat;
+    height: 200px;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+.skill{
+    background: url('images/skill.jpg') center/cover no-repeat;
+    height: 200px;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 50px;
+    border: 1px solid #fb7e00;
+}
+.brand{
+    background: url('images/brand-c.jpg') center/cover no-repeat;
+    height: 200px;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+h2{
+    color: white;
+    font-weight: 800;
+    background-color: #fb7e00;
+    height: 35px;
+}
+footer{
+    position: fixed;
+    background: url('images/event.jpg') center/cover no-repeat;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    padding: 18px 0 10px 20px;
+}
+footer i{
+    color: white;
+    font-size: 30px;
+    margin-right: 40px;
+}
+footer i:hover{
+    opacity: 0.2;
+
+}
