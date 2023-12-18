@@ -155,6 +155,9 @@ table .updatecart{
     border-radius: 5px;
     cursor: pointer;
 }
+button{
+    cursor: pointer;
+}
 .total{
     border: 1px solid #fb7e00;
     background-color: white;
@@ -252,7 +255,7 @@ footer i:hover{
         opacity: 0.2;
     }
     .cart{
-        margin-bottom: 40vh;
+        margin-bottom: 35vh;
     }
 }
 @media screen and (max-width: 750px) {
