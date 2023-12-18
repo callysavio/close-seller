@@ -181,12 +181,10 @@ table .updatecart{
 }
 footer{
     background: #6f1d9d url('images/event.jpg') center/cover no-repeat;
-    opacity: 0.8;
     padding: 10px 45px;
     position: relative;
     width: 100%;
-    top: 150px;
-    height: 200px;
+    height: 20%;
     color: white;
 }
 footer ul{
@@ -230,14 +228,31 @@ footer i:hover{
     .container-fluid ul, nav button{
         display: none;
     }
-    
 }
 @media screen and (max-width: 850px) {
     footer{
         height: 10vh;
+        position: fixed;
+        bottom: 0;
     }
-    footer ul{
+    footer .dest-footer{
         display: none;
+    }    
+    footer .mobile-footer{
+        display: block;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .mobile-footer i{
+        color: white;
+        font-size: 30px;
+        margin-right: 60px;
+    }
+    .mobile-footer i:hover{
+        opacity: 0.2;
+    }
+    .cart{
+        margin-bottom: 40vh;
     }
 }
 @media screen and (max-width: 750px) {
@@ -297,20 +312,7 @@ footer i:hover{
     }
 }
 @media screen and (max-width: 680px) {
-    .mobile-footer{
-        display: block;
-    }
-    .desk-footer{
-        display: none;
-    }
-    .mobile-footer i{
-        color: white;
-        font-size: 30px;
-        margin-right: 40px;
-    }
-    .mobile-footer i:hover{
-        opacity: 0.2;
-    }
+    
     #showRight{
         width: 50%;
     }
@@ -344,6 +346,11 @@ footer i:hover{
     }
     #showRight{
         width: 60%;
+    }
+    .mobile-footer i{
+        color: white;
+        font-size: 25px;
+        margin-right: 30px;
     }
 }
 @media screen and (max-width: 422px) {
