@@ -69,6 +69,7 @@ questions.forEach((question, index) => {
     // Initial state
     textElement.style.display = 'none';
     minusElement.style.display = 'none';
+    angleDownElement.style.display = 'none';
 
     question.addEventListener('click', () => {
         const isOpen = textElement.style.display === 'none';
@@ -97,3 +98,13 @@ questions.forEach((question, index) => {
         });
     });
 });
+
+function offCanvas() {
+    let x = document.getElementById("showRight");
+    x.style.display = "block";
+};
+
+function cancel() {
+    let x = document.getElementById("showRight");
+    x.style.display = "none";
+};

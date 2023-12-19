@@ -254,6 +254,7 @@ li, a{
     position: relative;
     top: 150px;
     margin: 0 45px;
+    margin-bottom: 30vh;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -319,7 +320,6 @@ footer ul{
     margin-left: -35px;
     flex-wrap: wrap;
 }
-
 footer .floatRight{
     color: #fb7e00;
 }

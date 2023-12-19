@@ -20,9 +20,32 @@ nav{
     align-items: center;
     z-index: 1;
 }
+nav .welcome{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.welcome h3{
+    display: none;
+    color: white;
+    font-size: 27px;
+}
 nav img{
     width: 70px;
     height: 70px;
+}
+.container-fluid ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
 }
 nav button{
     border: none;
@@ -64,7 +87,7 @@ li, a{
     color: white;
 }
 /* The icon for showing the content */
-.fas{
+#menu{
     display: none;
     cursor: pointer;
 }
@@ -85,6 +108,14 @@ li, a{
 }
 #showRight .dropdown-content li:hover{
     background-color: #fb7e00;
+}
+/* The icon for showing the content */
+#menu{
+    display: none;
+    cursor: pointer;
+    color: #fb7e00;
+    opacity: 1; 
+    font-size: 35px;
 }
 .head{
     display: flex;
@@ -107,7 +138,7 @@ li, a{
     top: 80px;
     font-size: 22px;
     background: center/cover no-repeat;
-    height: 570px;
+    height: 80vh;
     text-align: center;
     padding: 80px;
     color: white;
@@ -128,7 +159,8 @@ li, a{
 }
 .imageContent .day{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 100px;
 }
@@ -268,9 +300,11 @@ li, a{
     padding: 45px;
     width: 100%;
     text-align: center;
+    padding-bottom: 30vh;
 }
 .questions button{
     background-color: gray;
+    color: white;
     padding: 0 40px;
     width: 100%;
     height: 50px;
@@ -288,12 +322,12 @@ button .angle{
     background-color: white;
     width: 100%;
     margin: -5px auto;
-    height: 200px;
+    height: 20vh;
     box-shadow: 0 0 20px 0;
     padding: 30px;
 }
 .questions p{
-    width: 50%;
+    width: 80%;
     line-height: 30px;
     margin: 0 auto;
 }
@@ -301,23 +335,22 @@ button .angle{
     margin-bottom: 5px;
 }
 footer{
-    background: #6f1d9d url('images/event.jpg') center/cover no-repeat;
-    opacity: 0.8;
+    background: url('images/event.jpg') center/cover no-repeat;
     padding: 10px 45px;
     position: relative;
     width: 100%;
-    top: 550px;
-    height: 200px;
+    height: 20%;
     color: white;
 }
 footer ul{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 15px;
-    gap: 20px;
     margin-left: -35px;
+    flex-wrap: wrap;
 }
 footer .floatRight{
-    margin-left: 480px;
     color: #fb7e00;
 }
 footer .social{
@@ -332,4 +365,155 @@ footer i{
 }
 footer i:hover{
     opacity: 0.5;
+}
+.mobile-footer{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    nav .container-fluid, nav button{
+        display: none;
+    }
+    nav img{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+    .welcome h3{
+        display: block;
+    }
+    #menu{
+        display: block;
+    }
+    footer{
+        position: fixed;
+        height: 10vh;
+        bottom: 0;
+    }
+    footer .dest-footer{
+        display: none;
+    }
+    footer .mobile-footer{
+        display: block;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .mobile-footer i{
+        color: white;
+        font-size: 30px;
+        margin-right: 60px;
+    }
+    .mobile-footer i:hover{
+        opacity: 0.2;
+    }
+}
+@media screen and (max-width: 770px) {
+    #showRight{
+        width: 50%;
+    }
+    .imageContent{
+        top: 40px;
+        height: 80vh;
+    }
+    .flexticket{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .flexticket .accessticket{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .questions p{
+        width: 95%;
+        margin-top: -15px;
+    }
+}
+@media screen and (max-width: 595px) {
+    .imageContent{
+        padding: 80px 40px;
+    }
+    .questions button{
+        font-size: 20px;
+    }
+    .content ul{
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+    .content li{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px) {
+    #showRight{
+        width: 60%;
+    }
+    .questions .text{
+        height: 30vh;
+    }
+    .imageContent .day{
+        gap: 3px;
+    }
+    .imageContent{
+        height: 98vh;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mobile-footer i{
+        margin-right: 30px;
+    }
+    .questions button{
+        font-size: 16px;
+    }
+    #showRight{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .questions p{
+        line-height: 30px;
+        width: 95%;
+    }
+    .questions .text{
+        height: 35vh;
+    }
+    .faqs{
+        padding: 5px 45px;
+    }
+    .Sponsorship h1, 
+    .faqs h1, 
+    .getTicket h1, 
+    .speakers h1,
+    .relatedEvent h1,
+    #time{
+        font-size: 40px;
+    }
+    .Sponsorship h2,
+    .getTicket p,
+    .faqs p
+    {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 410px) {
+    nav{
+    padding: 10px 20px;
+    }
+    .imageContent{
+        height: 120vh;
+    }
+    .questions p{
+        line-height: 20px;
+    }
+    .questions .text{
+        height: 39vh;
+    }
+    .questions button{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .mobile-footer i{
+        margin-right: 25px;
+    }
 }
