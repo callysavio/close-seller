@@ -123,7 +123,7 @@ input{
     top: -20px;
     font-size: 18px;
 }
-#sign-in{
+.login{
     text-align: center;
     width: 40%;
     padding: 40px;
@@ -155,7 +155,7 @@ button{
 .container-fluid{
     display: none;
 }
-#sign-in, #sign-up{
+.login, #sign-up{
     width: 90%;
 }
 nav img{

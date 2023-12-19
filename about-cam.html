@@ -9,7 +9,10 @@
 </head>
 <body>
     <nav>
-        <img src="images/close_seller-logo.png" alt="close seller logo">
+        <div class="welcome">
+            <img src="images/close_seller-logo.png" alt="close seller logo">
+            <h3>Prince</h3>
+        </div>
         <div class="container-fluid">
             <ul>
                 <li>
@@ -32,11 +35,12 @@
                 </li>
             </ul>
         </div>
-        <i class="fas fa-bars fa-fade" onclick="offCanvas()" style="color: #fb7e00; opacity: 1; font-size: 35px; display: none;"></i>
+        <a href="#ticket"><button type="button">Get Ticket</button></a>
+        <i class="fas fa-bars fa-fade" onclick="offCanvas()" id="menu"></i>
         <div id="showRight">
             <div class="head">
                 <span><i class="fas fa-solid fa-xmark fa-fade" onclick="cancel()" style="color: #6f1d9f;"></i></span>
-                <a href="#">Home</a>
+                <a href="home.html"><i class="fa-solid fa-house" style="color: white;"></i></a>
             </div>
             <ul>
                 <li>
@@ -53,7 +57,6 @@
                 </li>
             </ul>
         </div>
-        <a href="#ticket"><button type="button">Get Ticket</button></a>
     </nav>
 
     <div class="imageContent">
@@ -230,13 +233,13 @@
         <div class="ques">
             <button type="button" onclick="ques()">
                 <div class="sum">
-                    <i class="fa-sharp fa-regular fa-plus" id="add" style="color: #fb7d00;"></i>
-                    <i class="minus fa-solid fa-minus" style="color: #fb7d00;"></i>
+                    <i class="fa-sharp fa-regular fa-plus" id="add" style="color: white;"></i>
+                    <i class="minus fa-solid fa-minus" style="color: white;"></i>
                 </div>
                 <p>What is the event about?</p>
                 <div class="angle">
-                    <i class="fa-solid fa-angle-right" id="angleRight" style="color: #fb7d00;"></i>
-                    <i class="angleDown fa-solid fa-angle-down" style="color: #fb7d00;"></i>
+                    <i class="fa-solid fa-angle-right" id="angleRight" style="color: white;"></i>
+                    <i class="angleDown fa-solid fa-angle-down" style="color: white;"></i>
                 </div>
             </button>
             <div class="text" id="text">
@@ -246,13 +249,13 @@
         <div class="ques">
             <button type="button" onclick="ques()">
                 <div class="sum">
-                    <i class="fa-sharp fa-regular fa-plus" id="add1" style="color: #fb7d00;"></i>
-                    <i class="minus fa-solid fa-minus" style="color: #fb7d00;"></i>
+                    <i class="fa-sharp fa-regular fa-plus" id="add1" style="color: white;"></i>
+                    <i class="minus fa-solid fa-minus" style="color: white;"></i>
                 </div>
                 <p>What is the event about?</p>
                 <div class="angle">
-                    <i class="fa-solid fa-angle-right" id="angleRight1" style="color: #fb7d00;"></i>
-                    <i class="angleDown fa-solid fa-angle-down" style="color: #fb7d00;"></i>
+                    <i class="fa-solid fa-angle-right" id="angleRight1" style="color: white;"></i>
+                    <i class="angleDown fa-solid fa-angle-down" style="color: white;"></i>
                 </div>
             </button>
             <div class="text" id="text1">
@@ -262,13 +265,13 @@
         <div class="ques">
             <button type="button" onclick="ques()">
                 <div class="sum">
-                    <i class="fa-sharp fa-regular fa-plus" id="add2" style="color: #fb7d00;"></i>
-                    <i class="minus fa-solid fa-minus" style="color: #fb7d00;"></i>
+                    <i class="fa-sharp fa-regular fa-plus" id="add2" style="color: white;"></i>
+                    <i class="minus fa-solid fa-minus" style="color: white;"></i>
                 </div>
                 <p>What is the event about?</p>
                 <div class="angle">
-                    <i class="fa-solid fa-angle-right" id="angleRight2" style="color: #fb7d00;"></i>
-                    <i class="angleDown fa-solid fa-angle-down" style="color: #fb7d00;"></i>
+                    <i class="fa-solid fa-angle-right" id="angleRight2" style="color: white;"></i>
+                    <i class="angleDown fa-solid fa-angle-down" style="color: white;"></i>
                 </div>
             </button>
             <div class="text" id="text2">
@@ -278,13 +281,13 @@
         <div class="ques">
             <button type="button" onclick="ques()">
                 <div class="sum">
-                    <i class="fa-sharp fa-regular fa-plus" id="add3" style="color: #fb7d00;"></i>
-                    <i class="minus fa-solid fa-minus" style="color: #fb7d00;"></i>
+                    <i class="fa-sharp fa-regular fa-plus" id="add3" style="color: white;"></i>
+                    <i class="minus fa-solid fa-minus" style="color: white;"></i>
                 </div>
                 <p>What is the event about?</p>
                 <div class="angle">
-                    <i class="fa-solid fa-angle-right" id="angleRight3" style="color: #fb7d00;"></i>
-                    <i class="angleDown fa-solid fa-angle-down" style="color: #fb7d00;"></i>
+                    <i class="fa-solid fa-angle-right" id="angleRight3" style="color: white;"></i>
+                    <i class="angleDown fa-solid fa-angle-down" style="color: white;"></i>
                 </div>
             </button>
             <div class="text" id="text3">
@@ -294,13 +297,13 @@
         <div class="ques">
             <button type="button" onclick="ques()">
                 <div class="sum">
-                    <i class="fa-sharp fa-regular fa-plus" id="add4" style="color: #fb7d00;"></i>
-                    <i class="minus fa-solid fa-minus" style="color: #fb7d00;"></i>
+                    <i class="fa-sharp fa-regular fa-plus" id="add4" style="color: white;"></i>
+                    <i class="minus fa-solid fa-minus" style="color: white;"></i>
                 </div>
                 <p>What is the event about?</p>
                 <div class="angle">
-                    <i class="fa-solid fa-angle-right" id="angleRight4" style="color: #fb7d00;"></i>
-                    <i class="angleDown fa-solid fa-angle-down" style="color: #fb7d00;"></i>
+                    <i class="fa-solid fa-angle-right" id="angleRight4" style="color: white;"></i>
+                    <i class="angleDown fa-solid fa-angle-down" style="color: white;"></i>
                 </div>
             </button>
             <div class="text" id="text4">
@@ -310,24 +313,32 @@
     </div>
 
     <footer>
-        <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#" class="floatRight">Host your events</a></li>
-        </ul>
-        <hr>
-        <div class="social">
-            <p>&copy 2023 close seller is a registered trademark of PLD Ltd.</p>
-            <span>
-                <i class="fa-brands fa-instagram" style="color: #fb7e00;"></i>
-                <i class="fa-brands fa-twitter" style="color: #fb7e00;"></i>
-                <i class="fa-brands fa-facebook" style="color: #fb7d00;"></i>
-            </span>
+        <div class="dest-footer">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#" class="floatRight">Host your events</a></li>
+            </ul>
+            <hr>
+            <div class="social">
+                <p>&copy 2023 close seller is a registered trademark of PLD Ltd.</p>
+                <span>
+                    <i class="fa-brands fa-instagram" style="color: #fb7e00;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #fb7e00;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #fb7d00;"></i>
+                </span>
+            </div>
+        </div>
+        <div class="mobile-footer">
+            <a href="home.html"><i class="fa-solid fa-house"></i></a>
+            <a href="events.html"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+            <a href="brand.html"><i class="fa fa-handshake" aria-hidden="true"></i></a>
+            <a href="skill.html"><i class="fa-solid fa-certificate"></i></a>
         </div>
     </footer>
 
