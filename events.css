@@ -471,9 +471,10 @@ footer i:hover{
         position: fixed;
         bottom: 0;
     }
-    footer .dest-footer{
+    footer .desk-footer{
         display: none;
-    }    
+        height: 60vh;
+    }
     footer .mobile-footer{
         display: block;
         text-align: center;
@@ -520,9 +521,6 @@ footer i:hover{
         top: 12px;
         left: 40%;
     }
-    footer hr{
-        margin-top: 30px;
-    }
 }
 @media screen and (max-width: 645px) {
     .card {
@@ -536,11 +534,6 @@ footer i:hover{
     }
     #showRight{
         width: 60%;
-    }
-    footer{
-        height: 10vh;
-        text-align: center;
-        padding: 18px 0 10px 20px;
     }
 }
 @media screen and (max-width: 570px) {
@@ -557,6 +550,11 @@ footer i:hover{
     }
     .card img{
         width: 180px;
+    }
+    .mobile-footer i{
+        color: white;
+        font-size: 25px;
+        margin-right: 30px;
     }
 }
 @media screen and (max-width: 488px) {
