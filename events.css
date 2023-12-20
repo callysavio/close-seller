@@ -613,4 +613,7 @@ footer i:hover{
     #showRight{
         width: 80%;
     }
+    footer{
+        padding: 15px 10px;
+    }
 }
