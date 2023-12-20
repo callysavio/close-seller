@@ -82,13 +82,6 @@ li, a{
     font-size: 20px;
     display: none;
 }
-#showRight .dropdown .dropdown-content{
-    background-color: #6f1d9d;
-    height: 180px;
-}
-#showRight .dropdown-content li:hover{
-    background-color: #fb7e00;
-}
 .head{
     display: flex;
     justify-content: space-between;
@@ -352,8 +345,11 @@ footer i:hover{
     }
     .mobile-footer i{
         color: white;
-        font-size: 25px;
-        margin-right: 30px;
+        font-size: 30px;
+        margin-right: 40px;
+    }
+    footer{
+        padding: 15px;
     }
 }
 @media screen and (max-width: 422px) {

@@ -24,11 +24,11 @@ nav .welcome{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
 }
 .welcome h3{
     display: none;
     color: white;
-    font-size: 27px;
 }
 nav img{
     width: 70px;
@@ -460,7 +460,7 @@ footer i:hover{
 }
 @media screen and (max-width: 500px) {
     .mobile-footer i{
-        margin-right: 30px;
+        margin-right: 40px;
     }
     .questions button{
         font-size: 16px;
@@ -470,6 +470,9 @@ footer i:hover{
     }
 }
 @media screen and (max-width: 450px) {
+    nav{
+        padding: 10px 20px;
+    }
     .questions p{
         line-height: 30px;
         width: 95%;
@@ -494,13 +497,19 @@ footer i:hover{
     {
         font-size: 25px;
     }
-}
-@media screen and (max-width: 410px) {
-    nav{
-    padding: 10px 20px;
+    .speakersImage img{
+        width: 100%;
+    }
+    .eventRelated img{
+        width: 100%;
     }
     .imageContent{
         height: 120vh;
+    }
+}
+@media screen and (max-width: 410px) {
+    footer{
+        padding: 15px 5px;
     }
     .questions p{
         line-height: 20px;
@@ -514,6 +523,9 @@ footer i:hover{
 }
 @media screen and (max-width: 380px) {
     .mobile-footer i{
-        margin-right: 25px;
+        margin-right: 40px;
+    }
+    .imageContent{
+        height: 140vh;
     }
 }
