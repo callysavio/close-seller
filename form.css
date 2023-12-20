@@ -152,10 +152,17 @@ button{
     cursor: pointer;
 }
 @media screen and (max-width: 900px) {
-.container-fluid{
+.container-fluid,
+nav img{
     display: none;
 }
-.login, #sign-up{
+#sign-in img,
+#sign-up img{
+    height: 40px;
+    width: 40px;
+}
+.login, 
+#sign-up{
     width: 90%;
 }
 nav img{
