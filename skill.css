@@ -339,6 +339,9 @@ footer i{
 footer i:hover{
     opacity: 0.5;
 }
+.mobile-footer{
+    display: none;
+}
 @media screen and (max-width: 1355px) {
     .search input{
         width: 350px;
