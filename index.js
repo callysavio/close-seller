@@ -13,3 +13,10 @@ function signIn() {
 setVisibility("sign-in", "")
 setVisibility("sign-up", "none")
 }
+
+// Disable zoom using JavaScript
+document.addEventListener('wheel', function (event) {
+    if (event.ctrlKey) {
+        event.preventDefault();
+    }
+});
