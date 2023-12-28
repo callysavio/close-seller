@@ -137,6 +137,8 @@ li, a{
 #showRight .dropdown .dropdown-content{
     background-color: #6f1d9d;
     height: 180px;
+    text-align: center;
+    padding-right: 40px;
 }
 #showRight .dropdown-content li:hover{
     background-color: #fb7e00;
@@ -477,14 +479,21 @@ footer i:hover{
         height: 60vh;
     }
     footer .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+    }
+    .mobile-footer p{
         display: block;
-        text-align: center;
-        padding-left: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
     .mobile-footer i{
         color: white;
         font-size: 30px;
-        margin-right: 60px;
+        margin-left: 15px;
+        margin-top: -10px;
     }
     .mobile-footer i:hover{
         opacity: 0.2;
@@ -500,6 +509,15 @@ footer i:hover{
     }
     .card img{
         width: 200px;
+    }
+    .desktopScreen{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .filter-content{
+        height: 450px;
     }
 }
 @media screen and (max-width: 770px) {
@@ -572,6 +590,9 @@ footer i:hover{
         top: 10px;
         left: 35%;
     }
+    #showRight{
+        width: 70%;
+    }
 }
 @media screen and (max-width: 460px) {
     #allEvent{
@@ -586,9 +607,6 @@ footer i:hover{
     }
 }
 @media screen and (max-width: 410px) {
-    #showRight{
-        width: 70%;
-    }
     .card {
         max-width: 300px;
         margin: 0 auto;
@@ -600,15 +618,6 @@ footer i:hover{
 @media screen and (max-width:400px) {
     #allEvent{
         padding-bottom: 190px;
-    }
-    .desktopScreen{
-        display: none;
-    }
-    .mobile{
-        display: block;
-    }
-    .filter-content{
-        height: 450px;
     }
     #showRight{
         width: 80%;
