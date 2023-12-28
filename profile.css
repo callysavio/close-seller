@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.profile-image{
+    position: relative;
+    background-color: #6f1d9d;
+    height: 20vh;
+}
+a i{
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+}
+.profile-image .fas{
+    position: absolute;
+    font-size: 25px;
+    bottom: -30px;
+    left: 200px;
+    color: #6f1d9d;
+    cursor: pointer;
+}
+.profile-image img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: -25%;
+    left: 36%;
+}
+.content{
+    background-color: #fb7e00;
+    padding: 20px;
+    height: 80vh;
+    padding-top: 80px;
+}
+.content input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+    background-color: #fb7e00;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.content label{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.content button{
+    background-color: #6f1d9d;
+    color: white;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    border-radius: 20px;
+}
