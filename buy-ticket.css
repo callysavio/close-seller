@@ -243,14 +243,22 @@ footer i:hover{
         display: none;
     }    
     footer .mobile-footer{
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         text-align: center;
-        padding-left: 30px;
+        padding-left: 10px;
+    }
+    .mobile-footer p{
+        display: block;
+        margin-right: 20px;
+        margin-top: 10px;
     }
     .mobile-footer i{
         color: white;
         font-size: 30px;
-        margin-right: 60px;
+        margin-left: 15px;
+        margin-top: -10px;
     }
     .mobile-footer i:hover{
         opacity: 0.2;

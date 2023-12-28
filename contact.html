@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Form</title>
@@ -11,9 +11,18 @@
     <div class="custom">
         <span class="borderline"></span>
         <form>
-            <input type="text" placeholder="Username"><br>
-            <input type="email" placeholder="Email"><br>
-            <input type="text" placeholder="Message"><br>
+            <div class="input-box">
+                <input type="text" placeholder=" "><br>
+                <label for="text">Username</label>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder=" "><br>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder=" "><br>
+                <label for="text">Message</label>
+            </div>
             <button type="button">Send Message</button>
         </form>
     </div>
@@ -21,7 +30,7 @@
     <footer>
         <a href="home.html"><i class="fa-solid fa-house"></i></a>
         <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-x-twitter"></i>
         <i class="fa-brands fa-facebook"></i>
     </footer>
 </body>

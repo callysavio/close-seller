@@ -44,19 +44,35 @@ a i{
     width: 100%;
     border: none;
     outline: none;
-    border-bottom: 3px solid white;
-    border-radius: 20px;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
     color: white;
     height: 40px;
     background-color: #fb7e00;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     padding-left: 15px;
     font-size: 20px;
 }
-.content label{
+.input-box{
+    position: relative;
+}
+.input-box label{
+    position: absolute;
     color: white;
     margin-left: 10px;
     font-size: 20px;
+    left: 0;
+    padding: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    top: -5px;
+    transition: all 0.5s ease-out;
+}
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label
+{
+    top: -33px;
+    font-size: 18px;
 }
 .content button{
     background-color: #6f1d9d;
@@ -66,5 +82,6 @@ a i{
     margin-top: 10px;
     font-weight: bold;
     font-size: 23px;
+    border: none;
     border-radius: 20px;
 }

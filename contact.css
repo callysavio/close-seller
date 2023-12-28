@@ -10,33 +10,50 @@ body{
 }
 form{
     background: linear-gradient(144deg,  rgb(250, 125, 0) 50%,  rgb(109, 28, 155) 50% );
-    position: absolute;
+    position: relative;
     z-index: 2;
-    width: 97%;
-    height: 389.5px;
+    width: 100%;
+    height: 100%;
     padding: 50px;
+    margin: 2px;
 }
 .custom{
     background-color: white;
     position: relative;
     width: 90%;
-    height: 400px;
+    height: 100%;
     margin: 0 auto;
-    padding: 5px;
     overflow: hidden;
     top: 30px;
+    padding-right: 4px;
 }
-.custom::before{
+.borderline::before{
     content: "";
+    background-color: black;
     position: absolute;
     top: -50%;
     left: -50%;
     width: 100%;
-    height: 400px;
+    height: 100%;
     z-index: 1;
     transform-origin: bottom right;
     animation: slide 6s linear infinite;
+    animation-delay: -1.5s;
 }
+.borderline::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: slideAfter 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
 @keyframes slide {
     0%{
         transform: rotate(0deg);
@@ -44,18 +61,6 @@ form{
     100%{
         transform: rotate(360deg);
     }
-}
-.custom::after{
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 100%;
-    height: 400px;
-    z-index: 1;
-    transform-origin: bottom right;
-    animation: slideAfter 6s linear infinite;
-    animation-delay: 3s;
 }
 @keyframes slideAfter {
     0%{
@@ -70,32 +75,6 @@ form{
     top: 0;
     inset: 0;
 }
-.borderline::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 100%;
-    height: 400px;
-    z-index: 1;
-    transform-origin: bottom right;
-    animation: slide 6s linear infinite;
-    animation-delay: -1.5s;
-}
-.borderline::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 400px;
-    height: 400px;
-    z-index: 1;
-    transform-origin: bottom right;
-    animation: slideAfter 6s linear infinite;
-    animation-delay: -4.5s;
-}
 h1{
     text-align: center;
 }
@@ -105,16 +84,35 @@ input{
     margin-bottom: 20px;
     border: none;
     outline: none;
-    border-bottom: 2px solid white;
-    border-radius: 20px;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
     padding-left: 15px;
     height: 40px;
     color: white;
     background-color: transparent;
     font-size: 18px;
+    margin-top: 20px;
 }
-input::placeholder{
+.input-box{
+    position: relative;
+}
+.input-box label{
+    position: absolute;
     color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    left: 0;
+    padding: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    top: 15px;
+    transition: all 0.5s ease-out;
+}
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label
+{
+    top: -10px;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
@@ -133,15 +131,15 @@ button{
     font-size: 20px;
 }
 footer{
-    position: relative;
-    background: linear-gradient(25deg, rgb(250, 125, 0) 50%,  transparent 30%);
+    position: fixed;
+    background: linear-gradient(25deg, rgb(250, 125, 0) 60%,  transparent 40%);
     bottom: 0;
-    top: 10vh;
-    height: 30vh;
+    height: 20vh;
+    width: 100%;
 }
 footer i{
     color: white;
-    font-size: 40px;
-    margin-top: 130px;
+    font-size: 30px;
+    margin-top: 80px;
     margin-left: 25px;
 }

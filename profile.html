@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Profile</title>
@@ -14,17 +14,31 @@
         <i class="fas fa-solid fa-camera-retro"></i>
     </div>
     <div class="content">
-        <label for="name">Name</label>
-        <input type="text">
-        <label for="email">Email</label>
-        <input type="email">
-        <label for="number">Phone Number</label>
-        <input type="number">
-        <label for="password">password</label>
-        <input type="password">
-        <label for="address">Address</label>
-        <input type="text">
+        <div class="input-box">
+            <input type="text" placeholder=" "> 
+            <label for="name">Name</label>
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder=" ">
+            <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder=" ">
+            <label for="number">Phone Number</label>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder=" ">
+            <label for="password">password</label>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder=" ">
+            <label for="address">Address</label>
+        </div>
         <button type="button">Save Details</button>
     </div>
+
+    <script src="profile.js">
+
+    </script>
 </body>
 </html>
