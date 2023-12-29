@@ -96,18 +96,14 @@ li, a{
     margin-bottom: 50px;
     border: 1px solid #fb7e00;
 }
-.brand{
-    background: url('images/brand-c.jpg') center/cover no-repeat;
-    height: 200px;
-    text-align: center;
-    padding-top: 150px;
-    margin-bottom: 50px;
-}
 h2{
     color: white;
     font-weight: 800;
     background-color: #fb7e00;
     height: 35px;
+}
+i{
+    cursor: pointer;
 }
 footer{
     position: fixed;
@@ -115,9 +111,8 @@ footer{
     bottom: 0;
     width: 100%;
     height: 10vh;
-    text-align: center;
-    padding: 24px 0 10px 20px;
     display: flex;
+    padding: 10px 45px;
     justify-content: space-between;
     align-items: center;
 }
@@ -133,5 +128,93 @@ footer i{
 }
 footer i:hover{
     opacity: 0.2;
-
+}
+@media screen and (max-width: 900px) {
+    #showRight{
+        width: 50%;
+    }
+    .event, .skill{
+        height: 400px;
+        padding-top: 320px;
+    }
+    h2{
+        height: 60px;
+        font-size: 35px;
+        padding-top: 10px;
+    }
+    footer p{
+        margin-left: 20px;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    footer i{
+        font-size: 40px;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 755px) {
+    #showRight{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 655px) {
+    .event, .skill{
+        height: 300px;
+        padding-top: 220px;
+    }
+    h2{
+        height: 55px;
+        font-size: 30px;
+    }
+    footer p{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    footer i{
+        margin-top: 10px;
+        font-size: 30px;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 612px) {
+    footer{
+        padding: 5px;
+    }
+    footer i{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    footer p{
+        margin-left: 10px;
+    }
+    #showRight{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 550px) {
+    footer{
+        padding: 15px 5px;
+    }
+    #showRight{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .event, .skill{
+        height: 200px;
+        padding-top: 135px;
+    }
+    h2{
+        height: 45px;
+        font-size: 25px;
+    }
+    footer p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 420px) {
+    #showRight{
+        width: 80%;
+    }
 }

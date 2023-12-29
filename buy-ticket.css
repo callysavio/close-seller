@@ -210,13 +210,13 @@ footer i:hover{
 .mobile-footer{
     display: none;
 }
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     #quan{
         margin-top: 3px;
         border: none;
         border-bottom: 1px solid #6f1d9d;
     }
-}
+} */
 @media screen and (max-width: 900px) {
     #menu{
         display: block;
@@ -224,8 +224,6 @@ footer i:hover{
     .container-fluid ul, nav button{
         display: none;
     }
-}
-@media screen and (max-width: 850px) {
     nav{
         padding: 10px 25px;
     }
@@ -251,18 +249,23 @@ footer i:hover{
     }
     .mobile-footer p{
         display: block;
-        margin-right: 20px;
+        margin-left: 10px;
         margin-top: 10px;
+        font-size: 25px;
     }
     .mobile-footer i{
         color: white;
-        font-size: 30px;
-        margin-left: 15px;
-        margin-top: -10px;
+        font-size: 40px;
+        margin-left: 20px;
     }
     .mobile-footer i:hover{
         opacity: 0.2;
     }
+    #showRight{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 850px) {
     .cart{
         margin-bottom: 35vh;
     }
@@ -322,11 +325,19 @@ footer i:hover{
         margin: 0 auto;
         width: 40%;
     }
-}
-@media screen and (max-width: 680px) {
-    
     #showRight{
-        width: 50%;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 655px) {
+    .mobile-footer p{
+        font-size: 20px;
+        margin-left: -3px;
+    }
+    .mobile-footer i{
+        margin-top: 5px;
+        font-size: 30px;
+        margin-left: 8px;
     }
 }
 @media screen and (max-width: 627px) {
@@ -335,6 +346,14 @@ footer i:hover{
     }
     th, td{
         padding: 2px;
+    }
+}
+@media screen and (max-width: 612px) {
+    #showRight{
+        width: 60%;
+    }
+    .mobile-footer{
+        padding-top: -15px;
     }
 }
 @media screen and (max-width: 595px) {
@@ -356,16 +375,21 @@ footer i:hover{
     #showRight{
         width: 60%;
     }
-    .mobile-footer i{
-        color: white;
-        font-size: 30px;
-        margin-right: 40px;
-    }
+}
+@media screen and (max-width: 550px) {
     footer{
-        padding: 15px;
+        padding: 15px 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mobile-footer p{
+        font-size: 17px;
     }
 }
 @media screen and (max-width: 422px) {
+    #showRight{
+        width: 80%;
+    }
     .mobile-table button{
         font-size: 17px;
     }
@@ -373,10 +397,7 @@ footer i:hover{
         margin: 0 auto;
         width: 40%;
     }
-    #showRight{
-        width: 70%;
-    }
-    footer{
-        padding: 15px 10px;
+    .mobile-footer i{
+        margin-top: -10px;
     }
 }
