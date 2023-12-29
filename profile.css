@@ -18,27 +18,31 @@ a i{
     color: white;
     margin: 20px;
 }
-.profile-image .fas{
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .fas{
     position: absolute;
     font-size: 25px;
-    bottom: -30px;
-    left: 200px;
+    bottom: -55px;
+    margin-left: 60px;
     color: #6f1d9d;
     cursor: pointer;
 }
-.profile-image img{
+.profile img{
     position: absolute;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     bottom: -25%;
-    left: 36%;
 }
 .content{
     background-color: #fb7e00;
     padding: 20px;
     height: 80vh;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .content input{
     width: 100%;
@@ -84,4 +88,9 @@ a i{
     font-size: 23px;
     border: none;
     border-radius: 20px;
+}
+@media screen and (max-width: 420px) {
+    .profile .fas{
+        bottom: -45px;
+    }
 }

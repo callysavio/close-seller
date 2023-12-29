@@ -259,7 +259,6 @@ li, a{
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 280px;
 }
 .card img{
     width: 280px;
@@ -342,7 +341,7 @@ footer i:hover{
 .mobile-footer{
     display: none;
 }
-@media screen and (max-width: 1355px) {
+/* @media screen and (max-width: 1355px) {
     .search input{
         width: 350px;
         margin-left: 120px;
@@ -409,58 +408,13 @@ footer i:hover{
         margin-right: 35px;
         margin-left: 26px;
     }
-}
-@media screen and (max-width: 990px) {
-    .search select{
-        display: none;
-    }
-    .card {
-        max-width: 380px;
+} */
+@media screen and (max-width: 900px) {
+    nav{
+        padding: 0 25px;
     }
     .card img{
-        width: 250px;
-    }
-}
-@media screen and (max-width: 920px) {
-    .card {
-        max-width: 300px;
-    }
-    .card img{
-        width: 230px;
-    }
-}
-@media screen and (max-width: 880px) {
-    .flex .price{
-        margin-left: 100px;
-    }
-    .program-type select{
-        width: 250px;
-    }
-    .filter-content hr{
-        margin-top: 50px;
-    }
-}
-@media screen and (max-width: 860px) {
-    #allProgram{
-        padding-bottom: 190px;
-    }
-    .card {
-        max-width: 300px;
-    }
-    .card img{
-        width: 220px;
-    }
-    .search .btn{
-        display: none;
-    }
-    .search .input{
-        margin-left: 100px;
-    }
-    .input .icon-search{
-        margin-left: 90px;
-    }
-    .container-fluid{
-        display: none;
+        width: 330px;
     }
     #menu{
         display: block;
@@ -470,149 +424,154 @@ footer i:hover{
         display: none;
     }
     footer{
-        height: 15vh;
+        height: 10vh;
         position: fixed;
         bottom: 0;
     }
-}
-@media screen and (max-width: 836px) {
-    
-    .search .input{
+    footer .desk-footer{
         display: none;
     }
-    .card {
-        max-width: 200px;
+    footer .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
     }
-    .card img{
-        width: 200px;
+    .mobile-footer p{
+        display: block;
+        margin-left: 10px;
+        font-size: 25px;
+        margin-top: 10px;
     }
-    .desktopScreen{
+    .mobile-footer i{
+        color: white;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .mobile-footer i:hover{
+        opacity: 0.2;
+    }
+    .search .input{
+        margin-left: 100px;
+    }
+    .input .icon-search{
+        margin-left: 90px;
+    }
+    .container-fluid,
+    .search .input,
+    .search p,
+    .search select,
+    .search .btn,
+    .desktopScreen
+    {
         display: none;
     }
     .mobile{
         display: block;
     }
+    .filter{
+        padding: 30px;
+    }
     .filter-content{
         height: 450px;
     }
-}
-@media screen and (max-width: 770px) {
-    .card {
-        max-width: 380px;
-    }
-    .card img{
-        width: 280px;
-    }
-}
-@media screen and (max-width: 680px) {
-    .card {
-        max-width: 400px;
-    }
-    .card img{
-        width: 260px;
-    }
-    .social span{
-        position: absolute;
-        top: 12px;
-        left: 40%;
-    }
-    footer hr{
-        margin-top: 30px;
-    }
-}
-@media screen and (max-width: 645px) {
-    .card {
-        max-width: 300px;
-    }
-    .card img{
-        width: 220px;
-    }
-    .card ul{
-        margin-left: -10px;
-    }
     #showRight{
-        width: 60%;
+        width: 50%;
     }
-    footer{
-        height: 10vh;
-        text-align: center;
-        padding: 18px 0 10px 20px;
-    }
-    .mobile-footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .desk-footer{
-        display: none;
-    }
-    .mobile-footer p{
-        display: block;
-        margin-right: 18px;
-        margin-top: 10px;
-    }
-    .mobile-footer i{
-        color: white;
-        font-size: 30px;
-        margin-top: -10px;
-    }
-    .mobile-footer i:hover{
-        opacity: 0.2;
-    }
-}
-@media screen and (max-width: 570px) {
-    .program-type select{
-        width: 150px;
-    }
-    .flex .price{
-        margin-left: 30px;
-    }
-}
-@media screen and (max-width: 560px) {
-    .card {
-        max-width: 180px;
-    }
-    .card img{
-        width: 180px;
-    }
-}
-@media screen and (max-width: 488px) {
-    .card {
-        max-width: 400px;
-    }
-    .card img{
-        width: 400px;
-    }
-    #showRight{
-        width: 70%;
-    }
-}
-@media screen and (max-width: 460px) {
     #allProgram{
         padding-bottom: 190px;
     }
-    .card {
-        max-width: 350px;
-        margin: 0 auto;
-    }
-    .card img{
-        width: 350px;
-    }
 }
-@media screen and (max-width: 410px) {
-    .card {
-        max-width: 300px;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 815px) {
     .card img{
         width: 300px;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width: 755px) {
+    .card img{
+        width: 250px;
+    }
+    #showRight{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 655px) {
+    .card img{
+        width: 230px;
+        height: 150px;
+    }
+    .mobile-footer p{
+        font-size: 20px;
+        margin-left: -3px;
+    }
+    .mobile-footer i{
+        margin-top: 5px;
+        font-size: 30px;
+        margin-left: 8px;
+    }
+}
+@media screen and (max-width: 612px) {
+    .card img{
+        width: 220px;
+    } 
+    .card ul{
+        margin-left: -12px;
+    }
+    #showRight{
+        width: 60%;
+    }
+    .mobile-footer{
+        padding-top: -15px;
+    }
+}
+@media screen and (max-width: 595px) {
+    .card img{
+        width: 460px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .card img{
+        width: 420px;
+    }
+    #showRight{
+        width: 70%;
+    }
+    footer{
+        padding: 15px 10px;
+    }
+}
+@media screen and (max-width: 515px) {
+    .card img{
+        width: 400px;
+    }
+    .mobile-footer p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card img{
+        width: 360px;
+    }
+}
+@media screen and (max-width: 455px) {
+    .card img{
+        width: 320px;
+    }
+}
+@media screen and (max-width:415px) {
     #allProgram{
         padding-bottom: 190px;
     }
     #showRight{
         width: 80%;
+    }
+    .mobile-footer i{
+        margin-top: -10px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .card img{
+        width: 280px;
     }
 }

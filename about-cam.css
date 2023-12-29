@@ -401,22 +401,25 @@ footer i:hover{
     }
     .mobile-footer p{
         display: block;
-        margin-right: 15px;
+        margin-left: 10px;
         margin-top: 10px;
+        font-size: 25px;
     }
     .mobile-footer i{
         color: white;
-        font-size: 30px;
-        margin-left: 15px;
-        margin-top: -10px;
+        font-size: 40px;
+        margin-left: 20px;
     }
     .mobile-footer i:hover{
         opacity: 0.2;
     }
+    #showRight{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 770px) {
     #showRight{
-        width: 50%;
+        width: 60%;
     }
     .imageContent{
         top: 40px;
@@ -436,6 +439,25 @@ footer i:hover{
         margin-top: -15px;
     }
 }
+@media screen and (max-width: 655px) {
+    .mobile-footer p{
+        font-size: 20px;
+        margin-left: -3px;
+    }
+    .mobile-footer i{
+        margin-top: 5px;
+        font-size: 30px;
+        margin-left: 8px;
+    }
+}
+@media screen and (max-width: 612px) {
+    #showRight{
+        width: 60%;
+    }
+    .mobile-footer{
+        padding-top: -15px;
+    }
+}
 @media screen and (max-width: 595px) {
     .imageContent{
         padding: 80px 40px;
@@ -451,11 +473,22 @@ footer i:hover{
     .content li{
         width: 100%;
     }
+    .mobile-footer {
+        font-size: 30px;
+    }
+    .mobile-footer p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 550px) {
+    footer{
+        padding: 15px 10px;
+    }
+    #showRight{
+        width: 70%;
+    }
 }
 @media screen and (max-width: 520px) {
-    #showRight{
-        width: 60%;
-    }
     .questions .text{
         height: 30vh;
     }
@@ -468,7 +501,15 @@ footer i:hover{
 }
 @media screen and (max-width: 500px) {
     .mobile-footer i{
-        margin-right: 40px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    .mobile-footer p{
+        margin-right: 20px;
+        font-size: 17px;
+    }
+    footer{
+        padding: 15px;
     }
     .questions button{
         font-size: 16px;
@@ -515,9 +556,12 @@ footer i:hover{
         height: 120vh;
     }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 415px) {
     footer{
-        padding: 15px 5px;
+        padding: 5px;
+    }
+    .mobile-footer i{
+        margin-top: -15px;
     }
     .questions p{
         line-height: 20px;
