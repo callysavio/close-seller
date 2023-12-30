@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(238, 233, 233, 0.854);
+    background-color: white;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
-    height: 150vh;
+    height: 130vh;
     font-size: 12px;
     position: relative;
 }
@@ -18,13 +18,14 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 .nav{
-    background-color: white;
-    grid-column: 2 / span 2;
-    margin-left: -30px;
+    background-color: #6f1d9d;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 1;
     position: fixed;
     z-index: 1;
-    width: 1160px;
     margin-left: 220px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 nav{
     display: flex;
@@ -32,34 +33,22 @@ nav{
     align-items: center;
     padding: 25px;
     height: 80px;
-    width: 1140px;
+    width: 100%;
 }
-.notification{
-    display: flex;
-    gap: 9px;
-    align-items: center;
-}
-select{
-    border: none;
-    outline: none;
-}
-p select{
-    background-color: rgba(205, 224, 251, 0.753);
-}
-.img{
+nav img{
     position: relative;
-    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 20px;
 }
-.img1{
-    border-radius: 50px;
-}
-.img2{
-    border-radius: 50px;
-    width: 30px;
-}
-.input{
+.welcome{
     position: relative;
-    margin-left: 60px;
+    margin-left: 20px;
+}
+.welcome h1{
+    color: white;
+    font-weight: 600;
 }
 input{
     border: 1px solid gray;
@@ -73,28 +62,37 @@ input{
     margin-top: 9px;
 }
 .menu{
-    background-color: white;
+    background-color: #fb7e00;
     grid-column: 1;
     grid-row: 1 / span 3;
     padding: 25px;
     width: 230px;
-    border-right: 3px solid rgba(214, 207, 207, 0.854);
+    border-right: 3px solid black;
     position: fixed;
     z-index: 1;
+    height: 100%;
+}
+.menu img{
+    position: relative;
+    left: 40%;
+    height: 40px;
+    width: 40px;
 }
 .menu li{
     cursor: pointer;
+}
+.menu p{
+    font-weight: 600;
+}
+.menu ul{
+    margin-top: 30px;
+    color: white;
 }
 ul img{
     width: 15px;
 }
 .flex{
     margin-left: 15px;
-}
-.logo{
-    margin-bottom: 25px;
-    width: 122px;
-    height: 33.57px;
 }
 li{
     display: flex;
@@ -103,240 +101,66 @@ li{
     margin-left: -30px;
     font-size: 13px;
     gap: 2px;
+    margin-bottom: -5px;
+    width: 300px;
 }
 button{
     border: none;
     border-radius: 8px;
     padding: 10px;
     height: 40px;
-    font-size: 11px;
+    font-size: 15px;
     width: 150px;
-    background-color: #8146FF;
+    background-color: #6f1d9d;
     color: white;
     margin: 15px;
     margin-top: 5px;
     cursor: pointer;
 }
-.color{
-    background-color: rgba(238, 233, 233, 0.854);
-    height: 40px;
-    border-radius: 10px;
-    padding-left: 30px;
-    margin-left: -60px;
-    margin-right: -20px;
-}
-.human{
-    width: 187px;
-    height: 126px;
-    margin-top: 17px;
-}
-.set{
-    width: 91.46px;
-    height: 20px;
+.main1, .main2{
     display: flex;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 4px;
-    cursor: pointer;
-}
-.set img{
-    width: 15px;
 }
 .main{
-    background-color: white;
+    background-color: #fb7e00;
+    color: white;
     grid-column: 2;
     padding: 5px 20px;
-    width: 380px;
+    width: 250px;
     height: 210px;
-    margin-left: 40px;
+    margin-left: 20px;
     border-radius: 19px;
 }
-.float{
-    float: right;
-    background-color: rgba(194, 217, 250, 0.753);
-    color: rgba(0, 72, 255, 0.705);
-    border-radius: 9px;
-    padding: 8px;
+.main ul{
+    position: relative;
+    top: 25%;
 }
-.vec{
-    color: rgba(0, 72, 255, 0.705);
-}
-.colors0{
-    background-color: #DB48FF;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.colors1{
-    background-color: #579AFF;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.colors2{
-    background-color: #8146FF;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.CND{
-    margin-top: 30px;
-}
-ul .floatRight1{
-    margin-right: 155px;
-}
-ul .floatRight2{
-    margin-right: 140px;
-}
-ul p{
-    margin-right: 150px;
+.main li a{
+    text-decoration: none;
+    color: #6f1d9d;
 }
 .allMain{
     position: relative;
     display: flex;
     width: 100%;
     align-items: center;
-    margin-left: 250px;
+    margin-left: 240px;
     margin-top: 10px;
 }
 .all{
-    position: absolute;
+    position: relative;
     flex-direction: column;
-    top: 120px;
-}
-.main2{
-    background-color: white;
-    grid-column: 3;
-    width: 560px;
-    height: 210px;
-    margin-left: 60px;
-    padding: 0 40px;
-    border-radius: 19px;
-    padding-left: -20px;
-}
-.floatt{
-    float: right;
-}
-.border{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 7px;
-    gap: 25px;
-    width: 100%;
-}
-.moveLeft{
-    margin-left: -20px;
-}
-.bord{
-    position: relative;
-    background-color: rgba(238, 233, 233, 0.854);
-    width: 40px;
-    height: 115px;
-    border-radius: 5px;
-    padding-left: 5px;
-}
-.bord1{
-    position: relative;
-    background-color: rgba(238, 233, 233, 0.854);
-    width: 40px;
-    height: 115px;
-    border-radius: 5px;
-    padding-left: 5px;
-    margin-left: -25px;
-}
-.colo0{
-    position: absolute;
-    background-color: #579AFF;
-    width: 31px;
-    height: 33px;
-    border-radius: 5px;
-    margin-top: 78px;
-}
-.colo1{
-    position: absolute;
-    background-color: #DB48FF;
-    width: 31px;
-    height: 57px;
-    border-radius: 5px;
-    margin-top: 53px;
-}
-.colo2{
-    position: absolute;
-    background-color: #8146FF;
-    width: 31px;
-    height: 87px;
-    border-radius: 5px;
-    margin-top: 24px;
-}
-.colo3{
-    position: absolute;
-    background-color: #ff447c;
-    width: 31px;
-    height: 40px;
-    border-radius: 5px;
-    margin-top: 72px;
-}
-.colo4{
-    position: absolute;
-    background-color: #4cb050;
-    width: 31px;
-    height: 59px;
-    border-radius: 5px;
-    margin-top: 52px;
-}
-.colo5{
-    position: absolute;
-    background-color: #ff805d;
-    width: 31px;
-    height: 80px;
-    border-radius: 5px;
-    margin-top: 32px;
-}
-.swift0{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 50px;
-}
-.swift1{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 30px;
-}
-.swift2{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 2px;
-}
-.swift3{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 50px;
-}
-.swift4{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 25px;
-}
-.swift5{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 10px;
+    top: 100px;
 }
 .table{
-    background-color: white;
+    background-color: #6f1d9d;
+    color: white;
     grid-column: 2 / span 2;
-    width: 1000px;
-    height: 500px;
-    margin-left: 290px;
-    margin-top: 50px;
-    padding: 7px 20px;
+    width: 78.8%;
+    height: 400px;
+    margin-left: 260px;
+    margin-top: 30px;
+    padding: 37px 20px;
     border-radius: 30px;
-    display: block;
 }
 table{
     border-collapse: collapse;
@@ -346,127 +170,70 @@ td{
     text-align: center;
 }
 td p{
-    background-color: rgb(242, 249, 242);
-    color: rgb(18, 247, 26);
+    background-color: #fb7e00;
+    color: white;
     width: 80px;
     padding: 13px;
     border-radius: 9px;
     margin-left: 60px;
 }
 .thead{
-    background-color: rgba(238, 233, 233, 0.854);
+    background-color: #fb7e00;
 }
 th{
     width: 1050px;
     height: 40px;
 }
 .inactive{
-    background-color: rgb(255, 241, 241);
-    color: red;
+    background-color: #fb7e00;
+    color: white;
     width: 90px;
     border-radius: 9px;
     margin-left: 55px;
 }
-.dip{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    border-bottom: 1px solid rgba(238, 233, 233, 0.854);
-}
-.dip img{
-    margin-bottom: 20px;
-    width: 30px;
-}
-.btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 5px;
-    font-size: 14px;
-}
-.showPage{
-    display: none;
-}
-
-/* @media screen and (max-width: 600px) {
-    .showPage{
-        display: block;
+@media screen and (max-width: 900px) {
+    .nav{
+        width: 76%;
     }
+    .main1, .main2{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .allMain{
+        position: relative;
+        left: 30px;
+    }
+    .table{
+        position: relative;
+        width: 60%;
+        left: 30px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .allMain{
+        left: 25px;
+    }
+    .table{
+        left: 25px;
+    }
+}
+@media screen and (max-width: 830px) {
     body{
         height: 150vh;
-        overflow-x: hidden;
     }
-    .grid{
-        display: none;
+    .allMain{
+        flex-direction: column;
+        gap: 25px;
     }
-    nav{
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 40px;
-        padding-right: 0;
-        height: 76px;
-        width: 580px;
-    }
-    .img{
-        position: absolute;
-        margin-top: 3px;
-    }
-    .img1{
-        position: absolute;
-        left: -38px;
-    }
-    .notification{
+    .main{
         position: relative;
-        display: flex;
-        align-items: center;
+        left: -160px;
+        width: 100%;
     }
-    ul{
-        display: flex;
-        justify-content: space-around;
+    .table{
+        left: 25px;
     }
-    li{
-        cursor: pointer;
-    }
-    .dash{
-        border: 1px solid gray;
-        padding: 10px;
-        border-radius: 8px;
-    }
-    h3, select{
-        margin: 40px;
-    }
-    .name{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        margin: 0 auto;
-        width: 495px;
-        height: 95px;
-        padding: 30px;
-        border-radius: 20px;
-    }
-    .nic{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .nic img{
-        width: 40px;
-    }
-    .nic span{
-        font-size: 12px;
-        display: block;
-    }
-    .active{
-        background-color: rgb(242, 251, 242);
-        color: rgb(18, 247, 26);
-        width: 80px;
-        padding: 13px;
-        padding-left: 22px;
-        border-radius: 9px;
-    }
-} */
+}
+@media screen and (max-width: 800px) {
+    
+}
